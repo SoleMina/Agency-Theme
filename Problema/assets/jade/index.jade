@@ -1,0 +1,198 @@
+doctype html
+html
+		mixin headings (h2)
+				h2= h2
+				p Lorem ipsum dolor sit amet consectetur
+		mixin encabezado (h6)
+				h6= h6
+		mixin services-box (h5)
+				h5= h5 
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. 
+		head
+				title Agency Theme
+				link(rel="stylesheet", href="assets/font-awesome/css/font-awesome.min.css")
+				link(rel="stylesheet", href="assets/css/bootstrap.css")
+				link(rel="stylesheet", href='https://fonts.googleapis.com/css?family=Montserrat', type='text/css')
+				link(rel="stylesheet", href='https://fonts.googleapis.com/css?family=Kaushan+Script', type='text/css')
+				link(rel="stylesheet", href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300', type='text/css')
+				link(rel="stylesheet", href='https://fonts.googleapis.com/css?family=Droid+Serif:700italic,400italic,400,700', type='text/css')
+				link(rel="stylesheet", href="assets/css/bootstrap.min.css")
+				link(rel="stylesheet", href="assets/css/main.css")
+		body
+				header.text-center
+						.container
+								nav
+									h3 Start Bootstrap
+									ul
+										li <a href="#">services</a>
+										li <a href="#">portfolio</a>
+										li <a href="#">about</a>
+										li <a href="#">team</a>
+										li <a href="#">contact</a>
+								h2 <i>Welcome To Our Studio!</i>
+								h1 it's nice to meet you
+								.main-btn<a href="#">tell me more</a>
+		section#services
+				.container.text-center
+						+headings ("SERVICES")
+						.row
+							.col-md-4
+								a
+									i.fa.fa-shopping-cart
+								+services-box ("E-commerce")
+							.col-md-4
+								a
+									i.fa.fa-laptop
+								+services-box ("Responsive Design")
+							.col-md-4
+								a
+									i.fa.fa-lock
+								+services-box ("Web Security")
+		section.fase1
+				.container.text-center
+						+headings ("PORTFOLIO")
+						.row
+								.col-md-4
+										img(src="img/portfolio/roundicons.png")
+										div.imagenes.text-center
+												h5 Round Icons
+												+encabezado ("Graphic Design")
+                
+								.col-md-4
+										img(src="img/portfolio/startup-framework.png")
+										div.imagenes
+												h5 Startup Framework
+												+encabezado ("Website Design")
+								.col-md-4
+										img(src="img/portfolio/treehouse.png")
+										div.imagenes
+												h5 Treehouse
+												+encabezado ("Website Design")
+						.row
+								.col-md-4
+										img(src="img/portfolio/golden.png")
+										div.imagenes
+												h5 Round Icons
+												+encabezado ("Graphic Design")
+								.col-md-4
+										img(src="img/portfolio/escape.png")
+										div.imagenes
+												h5 Startup Framework
+												+encabezado ("Website Design")
+								.col-md-4
+										img(src="img/portfolio/dreams.png")
+										div.imagenes
+												h5 Treehouse
+												+encabezado ("Website Design")
+		section.about
+			.container
+				.row.mb-50
+					.col-md-12.text-center
+						h2 ABOUT
+						p Lorem ipsum dolor sit  amet consectetur
+				#line
+					.row.mb-50
+						.col-md-4.col-md-offset-1.text-right.col-xs-12
+							h4 2009-2011<br> Our Humble Beginnings
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dicta illo, tenetur non aspernatur itaque eius neque delectus, provident aperiam, accusamus id vero. Consectetur quia deserunt, doloribus quibusdam nesciunt dolore.
+						.col-md-2.col-xs-12
+							img.img-about(src="img/about/1.jpg", alt="")
+					.row.mb-50
+						.col-md-2.col-md-offset-5.col-xs-12
+							.bck-img
+								img.img-about(src="img/about/2.jpg", alt="")
+						.col-md-4.text-left.col-xs-12
+							h4 2009-2011<br> Our Humble Beginnings
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dicta illo, tenetur non aspernatur itaque eius neque delectus, provident aperiam, accusamus id vero. Consectetur quia deserunt, doloribus quibusdam nesciunt dolore.
+					.row.mb-50
+						.col-md-4.col-md-offset-1.text-right.col-xs-12
+							h4 2009-2011<br> Our Humble Beginnings
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dicta illo, tenetur non aspernatur itaque eius neque delectus, provident aperiam, accusamus id vero. Consectetur quia deserunt, doloribus quibusdam nesciunt dolore.
+						.col-md-2.col-xs-12
+							.bck-img
+								img.img-about(src="img/about/3.jpg", alt="")
+					.row.mb-50
+						.col-md-2.col-md-offset-5.col-xs-12
+							.bck-img
+								img.img-about(src="img/about/4.jpg", alt="")
+						.col-md-4.text-left.col-xs-12
+							h4 2009-2011<br> Our Humble Beginnings
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dicta illo, tenetur non aspernatur itaque eius neque delectus, provident aperiam, accusamus id vero. Consectetur quia deserunt, doloribus quibusdam nesciunt dolore.
+					.row
+						.col-md-2.col-md-offset-5.col-xs-12
+							.img-about.circle
+								span be part of our history!
+		section.team
+				.container.text-center
+						+headings ("OUR AMAZING TEAM")
+						.row
+								.col-md-4
+										img(src="img/team/1.jpg")
+										h5 Kay Garland
+										h6 Lead Design
+										a
+											i.fa.fa-twitter
+										a
+											i.fa.fa-facebook
+										a
+											i.fa.fa-linkedin
+								.col-md-4
+										img(src="img/team/2.jpg")
+										h5 Larry Parker
+										h6 Lead Marketer
+										a
+											i.fa.fa-twitter
+										a
+											i.fa.fa-facebook
+										a
+											i.fa.fa-linkedin
+								.col-md-4
+										img(src="img/team/3.jpg")
+										h5 Diana Pertersen
+										h6 Lead Developer
+										a
+											i.fa.fa-twitter
+										a
+											i.fa.fa-facebook
+										a
+											i.fa.fa-linkedin
+						p.parrafo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, pariatur, quas. Ducimus, provident nihil voluptatem repellat officia explicabo esse perferendis voluptate numquam maxime sed quasi aut eligendi hic magni corporis.
+		section.logos
+				.container.text-center
+					.row
+						.col-md-3
+							img(src="img/logos/envato.jpg")
+						.col-md-3
+							img(src="img/logos/designmodo.jpg")
+						.col-md-3
+							img(src="img/logos/themeforest.jpg")
+						.col-md-3
+							img(src="img/logos/creative-market.jpg")
+		section.contact
+			.container.text-center
+				+headings ("CONTACT US")
+				.row
+					.col-md-6.margen
+						form
+							input(type='text' placeholder='YOUR NAME*' class='border')
+							input(type='text' placeholder='YOUR EMAIL*' class='border')
+							input(type='text' placeholder='YOUR PHONE*' class='border')
+					.col-md-6.margen
+						textarea.text-center(type='textarea' placeholder='YOUR MESSAGE*' class='border')
+				a(href='#' class='btn2' class='border') SEND MESSAGE
+		footer
+			.container.text-center
+				.row
+					.col-md-4
+						p.copyright Copyright &#169 Your Website 2014
+					.col-md-4
+						a
+							i.fa.fa-twitter
+						a
+							i.fa.fa-facebook
+						a
+							i.fa.fa-linkedin
+					.col-md-4
+						p.privacy Privacy Policy Terms of 
+		script(type='text/javascript', src='js/jquery.js')
+		script(type='text/javascript', src='js/bootstrap.min.js')

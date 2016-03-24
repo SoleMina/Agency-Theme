@@ -1,0 +1,30 @@
+
+/*FOOTER*/
+footer {
+    padding-top: 3%;
+    padding-bottom: 4%;
+    a {
+        display: inline-block;
+        background-color: #222222;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        font-size: 20px;
+        line-height: 40px;
+        color: white;
+        outline: none;
+        margin-right: 2%;
+    &:hover {
+        background-color: #FED136;
+        color: white;
+    }
+    }
+    .privacy {
+        color: #FED136;
+        font-family: "Montserrat";
+    }
+    .copyright {
+        font-family: "Montserrat";
+        font-weight: bold;
+    }
+}

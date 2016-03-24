@@ -1,0 +1,45 @@
+
+/*Team*/
+.team {
+    background-color: #f4f4f4;
+    padding-top: 3%;
+    a {
+        display: inline-block;
+        background-color: #222222;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        font-size: 20px;
+        line-height: 40px;
+        color: white;
+        outline: none;
+        margin-right: 2%;
+        margin-bottom: 2%;
+    &:hover {
+        background-color: #FED136;
+        color: white;
+    }
+    }
+    h2 {
+        font-weight: bold;
+        font-family: "Montserrat";
+    }
+    p {
+        color: gray;
+        padding-bottom: 5%;
+    }
+    .parrafo {
+        padding-top: 3%;
+        padding-bottom: 12%;
+    }
+    img {
+        border-radius: 130px;
+        border: 5px solid white;
+    }
+    h5 {
+        font-weight: bold;
+    }
+    h6 {
+        color: gray;
+    }
+}
