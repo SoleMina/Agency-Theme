@@ -19,19 +19,35 @@ html
 				link(rel="stylesheet", href="assets/css/bootstrap.min.css")
 				link(rel="stylesheet", href="assets/css/main.css")
 		body
-				header.text-center
+				header#header
+					nav.navbar.navbar-default.navbar-fixed-top#menu
 						.container
-								nav
-									h3 Start Bootstrap
-									ul
-										li <a href="#">services</a>
-										li <a href="#">portfolio</a>
-										li <a href="#">about</a>
-										li <a href="#">team</a>
-										li <a href="#">contact</a>
-								h2 <i>Welcome To Our Studio!</i>
-								h1 it's nice to meet you
-								.main-btn<a href="#">tell me more</a>
+							.navbar-header
+								button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+									span.sr-only toggle navigation
+									span.icon-bar
+									span.icon-bar
+									span.icon-bar
+								a.navbar-brand.titulo(href="#")
+									h1 Start Bootstrap
+							.collapse.navbar-collapse#bs-example-navbar-collapse-1
+								ul.nav.navbar-nav.navbar-right
+									li
+										a.active(href="#services") SERVICES
+									li
+										a(href="#portfolio") PORTFOLIO
+									li
+										a(href="#about") ABOUT
+									li
+										a(href="#team") TEAM
+									li
+										a(href="#contact") CONTACT
+		section#banner.text-center
+			.container
+				.box-text
+					h3 Welcome To Our Studio!
+					h1 IT'S NICE TO MEET YOU
+					button.botonyellow TELL ME MORE
 		section#services
 				.container.text-center
 						+headings ("SERVICES")
@@ -196,3 +212,5 @@ html
 						p.privacy Privacy Policy Terms of 
 		script(type='text/javascript', src='js/jquery.js')
 		script(type='text/javascript', src='js/bootstrap.min.js')
+		script(src="assets/js/jquery.js")
+		script(type="text/javascript" src="assets/js/bootstrap.min.js")
